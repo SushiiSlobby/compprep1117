@@ -10,12 +10,13 @@ import static java.lang.Math.*;
 
 public class A1 {
     public static void main(String[] args) throws Exception {
-        Scanner file = new Scanner(new File("count.in"));   //data file input
+        //Scanner file = new Scanner(new File("count.in"));   //data file input
+        Scanner file = new Scanner(new File("count.in"));
         file.nextLine();
         String in = "";
         while(file.hasNextLine())
         {
-            in += file.nextLine().replaceAll(" ","").toLowerCase();
+            in += file.nextLine().replaceAll("[^A-z]","").toLowerCase();
         }
 
         Map<String, Integer> map = new TreeMap<>();

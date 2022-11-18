@@ -33,12 +33,6 @@ public class A7 {
                 int x = cord.charAt(0) - 65;
                 int y = Integer.parseInt(cord.substring(1));
                 String[] ln = mat[x].split("");
-                switch(ln[y])
-                {
-                    case(value):
-                        //code
-                        break;
-                }
                 ln[y] = ".";
                 mat[x] = String.valueOf(ln);
             }
